@@ -3,7 +3,11 @@
   "name": "Productivity Assistant",
   "description": "Manage tasks and get AI-powered suggestions for productivity.",
   "version": "1.0",
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -11,5 +15,12 @@
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     }
-  }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://*/",
+    "https://*/"
+  ]
 }
