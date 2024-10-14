@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productivity Assistant</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>AI Task Manager</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h2 { text-align: center; }
+        #suggestion { margin-top: 20px; font-style: italic; }
+    </style>
 </head>
 <body>
-    <h2>Task Manager</h2>
-    <form id="task-form">
-        <input type="text" id="task-input" placeholder="Enter your task">
-        <button type="submit">Add Task</button>
-    </form>
-    <ul id="task-list"></ul>
-    <div id="suggestions"></div>
-
+    <h2>Get AI Task Suggestions</h2>
+    <input type="text" id="task-input" placeholder="Enter a task" />
+    <button id="generate-suggestion">Get Suggestion</button>
+    <p id="suggestion"></p>
     <script src="popup.js"></script>
 </body>
 </html>
