@@ -1,12 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Productivity Assistant",
+  "name": "Productivity Assistant with AI",
   "description": "Manage tasks and get AI-powered suggestions for productivity.",
-  "version": "1.0",
+  "version": "1.1",
   "permissions": [
     "storage",
     "activeTab",
-    "scripting"
+    "scripting",
+    "identity"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
   ],
   "action": {
     "default_popup": "popup.html",
@@ -17,4 +21,3 @@
     }
   }
 }
-
